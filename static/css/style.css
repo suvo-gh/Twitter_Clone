@@ -1,0 +1,263 @@
+/*****************
+**COMMON
+*****************/
+
+body {
+  height: 100%;
+  display: block;
+  margin: 4px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+html {
+  display: block;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin-top: initial;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+/*.ditch {
+  height: 17px;
+  border-top: 1px solid rgb(235, 238, 240);
+  border-bottom: 1px solid rgb(235, 238, 240);
+  background-color: rgb(247, 248, 248);
+  border-bottom: 1px solid rgb(235, 238, 240);
+}*/
+/***************
+**POST FORM
+***************/
+
+.post_form textarea {
+  border: 2px;
+  width: 78.68%;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: none;
+  height: 100px;
+  border-color: #d4faef;
+  margin-left: 20px;
+}
+
+.post_form input {
+  border: 2px;
+  width: 78.68%;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: #d4faef;
+  margin-left: 20px;
+}
+
+.post_form #myfile{
+  color: gray;
+  width: 73.68%;
+  margin-left: 0px;
+}
+
+.post_form .btn {
+  text-decoration: none;
+  font-size: 13px;
+  width: 22.32%;
+  font-weight: bold;
+  border: 11px solid #14708f;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 4px;
+  margin-top: -60px;
+  background-color: #14708f;
+  color: white;
+  letter-spacing: 2px;
+  float: right;
+}
+
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 10px solid rgb(192, 253, 255);
+  flex-grow: 1;
+}
+
+.post_form .dplogo img{
+  float: left;
+  width: 90px;
+  border-radius: 90px;
+  height: 90px;
+}
+
+
+
+/*****************
+**POST
+*****************/
+
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.post ul {
+  display: block;
+  list-style-type: disc;
+  margin: 0px 0px;
+  padding: 0;
+  padding-inline-start: 0px;
+}
+
+
+.posts li {
+  display: flex;
+  border-bottom: 1px solid rgb(82, 82, 82);
+  padding: 20px 40px;
+  list-style: none;
+  position: relative;
+}
+
+.posts li .menu_icon {
+  width: 26px;
+  position: absolute;
+  top: 24px;
+  right: 11px;
+}
+
+.posts li .menu {
+  position: absolute;
+  top: 42px;
+  right: 35px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 15px;
+  display: none;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+  color: #00acee;
+  font-weight: bold;
+}
+
+.posts li .menu :hover {
+  color: red;
+}
+
+.posts li .logo {
+  width: 80px;
+  padding: 5px 15px 10px 10px;
+}
+
+.posts li .logo img {
+  width: 70%;
+  border-radius: 50%;
+  border: 1px solid rgb(235, 238, 240);
+  background-color: rgb(198, 255, 227);
+}
+
+.posts li .name_body {
+  flex-basis: 55%;
+}
+
+.posts li .name_body .name {
+  padding-top: 4px;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  margin-top: -24px;
+}
+
+.posts li .name_body .post-body{
+  margin-top: 20px
+}
+
+.postimage{
+  height: 240px;
+  width: 240px;
+}
+/*****************
+**Main
+*****************/
+
+.main .main-header .logo {
+  width: 32px;
+  margin-right: 30px;
+}
+
+.main .main-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.main {
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  border-left: 1px solid rgba(235, 238, 240, 0);
+  border-right: 1px solid rgba(235, 238, 240, 0);
+}
+
+.main .main-header h1 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.main .main-header {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  margin-top: 15px;
+}
+
+.name_body #like {
+  background-color: #00acee;
+  color: white;
+  border-color: #00acee;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 510px) {
+  .posts li .name_body .name {
+    font-size: 20px;
+    border-radius: 2px;
+    border-color: #00acee;
+  }
+}

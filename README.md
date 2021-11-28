@@ -1,2 +1,1 @@
-# Twitter_Clone
-Twitter clone project
+# Django_dorum_Dark
