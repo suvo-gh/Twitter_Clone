@@ -31,6 +31,8 @@ def delete(request, post_id):
     post.delete()
     return HttpResponseRedirect('/')
 
+
+    
 def edit(request, id):
     if request.method == "GET":
         posts = Post.objects.get(id=id)
@@ -43,6 +45,7 @@ def edit(request, id):
             return HttpResponseRedirect("/")
         else:
             return HttpResponse("not valid")
+
 
 def likes(request, id):
     print(id)
