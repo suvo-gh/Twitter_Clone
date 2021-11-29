@@ -201,9 +201,25 @@ form {
 }
 
 .postimage{
-  height: 240px;
-  width: 240px;
+  width: 130%;
+  border-radius: 20px;
+  margin-top: 10px;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-left: 30px;
+
 }
+
+.like{
+  height: 20px
+}
+
+.like_count{
+  display: block;
+  margin-top: -19px;
+  margin-left: 27px;
+}
+
 /*****************
 **Main
 *****************/
@@ -260,4 +276,126 @@ form {
     border-radius: 2px;
     border-color: #00acee;
   }
+}
+/**********
+**EDIT
+************/
+.btnn {
+  background-color: rgb(38, 40, 41);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+}
+
+.updatebtn{
+  text-decoration: none;
+    font-size: 13px;
+    width: 22.32%;
+    font-weight: bold;
+    border: 5px solid #14708f;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 4px;
+    margin-top: -10px;
+    background-color: #14708f;
+    letter-spacing: 2px;
+    float: right;
+
+}
+
+@media screen and (max-width: 622px) {
+
+  .post_form input {
+    border: 2px;
+    width: 100%;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-color: #d4faef;
+    margin-left: 1px;
+  }
+
+  .post_form textarea {
+    border: 2px;
+    width: 100%;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    height: 100px;
+    border-color: #d4faef;
+    margin-left: 1px;
+  }
+
+  .posts li .name_body .name {
+    font-size: 20px;
+    border-radius: 2px;
+    border-color: #00acee;
+  }
+
+  .post_form .input .name{
+    border: 21px;
+    width: 100%;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-color: #d4faef;
+    margin-left: 1px;
+  }
+
+  .post_form #myfile{
+    width: 100%;
+    margin: 1px;
+    float:none;
+    clear:left;
+  }
+  .post_form .btn{
+    margin-top: 9px;
+    width:100%;
+    float:none;
+    clear:right
+  }
+  .post_form .dplogo img {
+    float: none;
+    clear:both;
+    margin-left: 183px;
+    width: 90px;
+    border-radius: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  .postimage {
+    width: 130%;
+    border-radius: 20px;
+    margin-top: 10px;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: 0px; 
+  }
+}
+
+@media screen and (max-width: 510px){
+  .post_form .dplogo img {
+    float: none;
+    clear:both;
+    margin-left: 142px;
+    width: 90px;
+    border-radius: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .post_form .dplogo img {
+    display:none
+  }
+
 }

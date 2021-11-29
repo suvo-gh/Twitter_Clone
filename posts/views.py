@@ -30,3 +30,23 @@ def delete(request, post_id):
     post = Post.objects.get(id=post_id)
     post.delete()
     return HttpResponseRedirect('/')
+
+def edit(request, id):
+    if request.method == "GET":
+        posts = Post.objects.get(id=id)
+        return render(request, "edit.html", {"posts": posts})
+    if request.method == "POST":
+        editposts = Post.objects.get(id=id)
+        form = PostForm(request.POST, request.FILES, instance=editposts)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/")
+        else:
+            return HttpResponse("not valid")
+
+def likes(request, id):
+    print(id)
+    likedtweet = Post.objects.get(id=id)
+    likedtweet.like_count += 1
+    likedtweet.save()
+    return HttpResponseRedirect("/")

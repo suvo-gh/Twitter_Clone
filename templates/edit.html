@@ -7,13 +7,13 @@
   <div class="main">
     <div class="main-header">
       <img src="/static/img/techis-logo.png" class="logo">
-      <h1>Home</h1>
+      <h1>Edit</h1>
     </div>
   </div>
 
 
   <section class="post_form">
-    <form action="/" method="POST" enctype='multipart/form-data'>
+    <form action="" method="POST" enctype='multipart/form-data'>
       {% csrf_token %}
       <div>
         <div class="dplogo">
@@ -21,17 +21,16 @@
         </div>
 
         <div class="input">
-          <input type="text" name="name" placeholder="Name" required />
-          <textarea name="body" placeholder="Out with your thoughts!" required></textarea>
+          <input type="text" name="name" value="{{posts.name}}" placeholder="Name" required/>
+          <textarea name="body" placeholder="{{posts.body}}" required></textarea>
         </div>
 
-        <div class="bottom-area">
-          <div class="mb-0">
-            <!--<label for="myfile"></label>-->
-            <input accept="audio/*|video/*|image/*" type="file" id="myfile" name="image"/> 
-          </div>
-          <button class="btn" type="submit">Tweet</button>
+        <div class="editfooter">
+          <input class="updatebtn" type="button" value="Update" />
+          <a href="{% url 'index' %}" class="btnn">Cancel</a>
         </div>
       </div>
     </form>
   </section>
+
+  {% endblock %}

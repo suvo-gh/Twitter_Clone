@@ -55,7 +55,11 @@
           <div class="datetime">{{ post.created_at }}</div>
           <div class="post-body">{{ post.body }}</div>
           <div class="image">
-            <img src="{{ post.image.url }}" alt=" " class="postimage" >
+            <img src="{{ post.image.url }}" alt="" class="postimage" >
+          </div>
+          <div class="like_icon">
+            <a href="likes/{{ post.id }}"> <img class="like" src="{% static 'img/like.png' %}" ></a>
+            <div class="like_count">{{ post.like_count }}</div>
           </div>
           <!---- <a href="delete/{{ post.id }}/">delete</a>-->
         </div>

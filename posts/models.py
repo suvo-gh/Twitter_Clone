@@ -20,6 +20,7 @@ class Post(models.Model):
         'Created DateTime', blank=True, auto_now_add=True
     )
 
-    image = CloudinaryField("image", blank=True, null=True)
+    image = CloudinaryField("image", blank=True, null=True
+    )
 
-
+    like_count = models.IntegerField(default=0, null=True, blank=True)
