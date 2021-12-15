@@ -290,7 +290,11 @@ form {
   padding: 0.375rem 0.75rem;
   text-decoration: none;
 }
-
+.browsebtn{
+  width: 101% !important;
+  margin-left: 1px !important;
+  color: grey;
+}
 .updatebtn{
   text-decoration: none;
     font-size: 13px;
@@ -304,6 +308,15 @@ form {
     background-color: #14708f;
     letter-spacing: 2px;
     float: right;
+
+}
+.editimage{
+  width: 101%;
+  border-radius: 20px;
+  margin-top: 10px;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-left: 1px;
 
 }
 

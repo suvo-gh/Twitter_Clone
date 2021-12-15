@@ -25,6 +25,12 @@
           <textarea name="body" placeholder="{{posts.body}}" required></textarea>
         </div>
 
+        <div class="pic">
+          <img src="{{ posts.image.url }}" alt=" " class="editimage" >       
+              <input type="file" name="image" class="browsebtn">
+          </div>
+        <br>
+
         <div class="editfooter">
           <input class="updatebtn" type="button" value="Update" />
           <a href="{% url 'index' %}" class="btnn">Cancel</a>
