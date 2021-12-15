@@ -13,7 +13,7 @@
 
 
   <section class="post_form">
-    <form action="/" method="POST" enctype='multipart/form-data'>
+    <form action="" method="POST" enctype='multipart/form-data'>
       {% csrf_token %}
       <div>
         <div class="dplogo">
@@ -32,7 +32,7 @@
         <br>
 
         <div class="editfooter">
-          <input class="updatebtn" type="button" value="Update" />
+          <input class="updatebtn" type="submit" value="Update" />
           <a href="{% url 'index' %}" class="btnn">Cancel</a>
         </div>
       </div>
