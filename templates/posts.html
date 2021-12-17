@@ -55,7 +55,9 @@
           <div class="datetime">{{ post.created_at }}</div>
           <div class="post-body">{{ post.body }}</div>
           <div class="image">
-            <img src="{{ post.image.url }}" alt=" " class="postimage" >
+            {% if post.image.url %}
+            <img src="{{ post.image.url }}" alt="" class="postimage" >
+            {% endif %}
           </div>
 
           <div class="like_icon">
