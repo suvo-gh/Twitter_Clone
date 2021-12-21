@@ -28,7 +28,7 @@
         <div class="bottom-area">
           <div class="mb-0">
             <!--<label for="myfile"></label>-->
-            <input accept="audio/*|video/*|image/*" type="file" id="myfile" name="image"/> 
+            <input accept="audio/*|video/*|image/*" type="file" id="myfile" name="image" />
           </div>
           <button class="btn" type="submit">Tweet</button>
         </div>
@@ -44,7 +44,7 @@
       <li>
         <img class="menu_icon js-menu-icon" src="{% static 'img/icons8-menu-64.png' %}" />
         <div class="menu">
-          <a href="/delete/{{ post.id }}/">Delete</a><br/><br/>
+          <a href="/delete/{{ post.id }}/">Delete</a><br /><br />
           <a href="/edit/{{ post.id }}/">Edit</a>
         </div>
         <div class="logo">
@@ -56,12 +56,14 @@
           <div class="post-body">{{ post.body }}</div>
           <div class="image">
             {% if post.image.url %}
-            <img src="{{ post.image.url }}" alt="" class="postimage" >
+            <a href="{{ post.image.url }}" target="_blank">
+            <img src="{{ post.image.url }}" alt="" class="postimage">
+            </a>
             {% endif %}
           </div>
 
           <div class="like_icon">
-            <a href="likes/{{ post.id }}"> <img class="like" src="{% static 'img/like.png' %}" ></a>
+            <a href="likes/{{ post.id }}"> <img class="like" src="{% static 'img/like.png' %}"></a>
             <div class="like_count">{{ post.like_count }}</div>
           </div>
           <!---- <a href="delete/{{ post.id }}/">delete</a>-->
@@ -78,3 +80,4 @@
 </section>
 
 {% endblock %}
+z
